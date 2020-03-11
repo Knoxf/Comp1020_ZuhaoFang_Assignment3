@@ -4,6 +4,12 @@ public class Thing{
 	// Instance variables. 
 	private String name; // Note: So far name must be set in Constructor
 	private String description;
+	double weight;
+	double value;
+
+	public double totalWeight(){
+		return weight;
+	}
 
 	// Alternate way of assigning variables, using "this" keyword
 	public Thing(String name, String description){
