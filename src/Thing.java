@@ -6,7 +6,10 @@ public class Thing{
 	private String description;
 	double weight;
 	double value;
-	Vector2 position;
+
+	double xAxis;
+	double yAsix;
+	Vector2 position = new Vector2(xAxis,yAsix);
 	String drawFile;
 	boolean isDrawn;
 
@@ -19,6 +22,10 @@ public class Thing{
 	public double totalWeight(){
 		return weight;
 	}
+
+	public void update(){
+
+	}// still have some problem
 
 	// Alternate way of assigning variables, using "this" keyword
 	public Thing(String name, String description){
