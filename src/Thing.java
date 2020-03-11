@@ -6,6 +6,15 @@ public class Thing{
 	private String description;
 	double weight;
 	double value;
+	Vector2 position;
+	String drawFile;
+	boolean isDrawn;
+
+	public void draw(){
+		if(isDrawn){
+			StdDraw.picture(position.x,position.y,drawFile);
+		}
+	}
 
 	public double totalWeight(){
 		return weight;
