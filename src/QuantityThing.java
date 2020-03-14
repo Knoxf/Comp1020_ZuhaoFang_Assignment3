@@ -17,14 +17,20 @@ public class QuantityThing extends Thing{
         return maxCapacity - units;
     }
 
-    public void add(){
-        if((maxCapacity - units) != 0 && (maxCapacity - units)>0){
-
+    public void add(int addNum){
+        if((maxCapacity - units) >= 0){
+            if((units + addNum) <= maxCapacity){
+                units += addNum;
+            }
         }
     }
 
-    public void remove(){
-
+    public void remove(int removeNum){
+        if(units >= 0){
+            if((units - removeNum) >= 0){
+                units -= removeNum;
+            }
+        }
     }
 
 
