@@ -7,9 +7,7 @@ public class Thing{
 	double weight;
 	double value;
 
-	double xAxis;
-	double yAsix;
-	Vector2 position = new Vector2(xAxis,yAsix);
+	Vector2 position = new Vector2();
 	String drawFile;
 	boolean isDrawn;
 
