@@ -1,9 +1,9 @@
 public class QuantityThing extends Thing{
 
-    String measurement;
-    double weightPerUnit;
-    int units;
-    int maxCapacity;
+    public String measurement;
+    public double weightPerUnit;
+    public int units;
+    public int maxCapacity;
 
     public QuantityThing(String name, String description) {
         super(name, description);
